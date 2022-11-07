@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sample.css">
+    <title>ペンギンタップトレカ</title>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <img src="/img/card.jpeg" alt="カード">
+            <button id="tap">クリック</button>
+        </ul>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('#tap').on('click', function () {
+            //alert('OK')
+
+            // 1. 乱数(0~7)
+            const card = Math.floor(Math.random() * 8);
+            console.log(card);
+
+            // 2. 分岐処理
+            let view = '';
+            if (card === 0) {
+            } else if (card === 1) {
+
+            } else if (card === 2) {
+
+            } else if (card === 3) {
+
+            } else if (card === 4) {
+
+            } else if (card === 5) {
+
+            } else if (card === 6) {
+
+            } else if (card === 7) {
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
