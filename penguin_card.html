@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sample.css">
+    <title>すみだペンギン</title>
+</head>
+
+<body>
+    <header>
+        <h1>今日のすみペンくじ</h1>
+    </header>
+    <main>
+        <!-- クリックボタンがある、カードがある -->
+        <button id="click" class="touch">クリック</button>
+        <!-- 結果が出る カードと名前が出る -->
+        <div id="result" class="penname">今日のすみだペンは？</div>
+        </p>
+        <p id="img" class="img">
+            <img src="img/card.jpeg" alt="?" style="width:400px; height: 400px;">
+        </p>
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $('#click').on('click', function () {
+                const card = Math.floor(Math.random() * 8);
+                console.log(card);
+                if (card === 0) {
+                    $('#result').text('しらたまちゃん（ぺちゃんこ寝ver.）');
+                    $('#img').html('<a href=""><img src="img/pen_sira_1.png" alt="しらたま１" style="width:400px; height:500px;"></a> ');
+
+                } else if (card === 1) {
+                    $('#result').text('しらたまちゃん（ぷかぷかver.）');
+                    $('#img').html('<a href=""><img src="img/pen_sira_2.png" alt="しらたま2" style="width:400px; height:500px;"></a> ');
+
+                } else if (card === 2) {
+                    $('#result').text('ぼんぼり（ホースが気になるver.）');
+                    $('#img').html('<a href=""><img src="img/pen_bon_1.png" alt="ぼんぼり1" style="width:400px; height:500px;"></a> ');
+
+                } else if (card === 3) {
+                    $('#result').text('ぼんぼり（ドヤver.）');
+                    $('#img').html('<a href=""><img src="img/pen_bon_2.png" alt="ぼんぼり2" style="width:400px; height:500px;"></a> ');
+
+                } else if (card === 4) {
+                    $('#result').text('だいふく（ポスター）');
+                    $('#img').html('<a href=""><img src="img/pen_dai.png" alt="だいふく" style="width:400px; height:500px;"></a> ');
+
+                } else if (card === 5) {
+                    $('#result').text('こまり（陸でおねんねver.）');
+                    $('#img').html('<a href=""><img src="img/pen_koma.png" alt="こまり" style="width:400px; height:500px;"></a> ');
+
+                } else if (card === 6) {
+                    $('#result').text('さくら');
+                    $('#img').html('<a href=""><img src="img/pen_saku.png" alt="さくら" style="width:400px; height:500px;"></a> ');
+
+                } else {
+                    $('#result').text('佐藤さん');
+                    $('#img').html('<a href=""><img src="img/satousan.png" alt="佐藤さん" style="width:400px; height:500px;"></a> ');
+                }
+            });
+
+
+        </script>
+    </main>
