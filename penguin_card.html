@@ -13,6 +13,13 @@
         <h1>今日のすみペンくじ</h1>
     </header>
     <main>
+        <!-- オーディオ -->
+        <audio src="bgm/card.mp3" id="play-button_1"></audio>
+        <audio src="bgm/nyu.mp3" id="play-button_2"></audio>
+        <audio src="bgm/yochi.mp3" id="play-button_3"></audio>
+        <audio src="bgm/satousan.mp3" id="play-button_4"></audio>
+
+
         <!-- クリックボタンがある、カードがある -->
         <button id="click" class="touch">クリック</button>
         <!-- 結果が出る カードと名前が出る -->
@@ -34,35 +41,49 @@
                 console.log(card);
                 if (card === 0) {
                     $('#result').text('しらたまちゃん（ぺちゃんこ寝ver.）');
-                    $('#img').html('<a href=""><img src="img/pen_sira_1.png" alt="しらたま１" style="width:400px; height:500px;"></a> ');
+                    $('#img').html('<a href="https://twitter.com/ReLU_aqua/status/1570725630177849346?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_sira_1.png" alt="しらたま１" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_2").get(0).play();
 
                 } else if (card === 1) {
                     $('#result').text('しらたまちゃん（ぷかぷかver.）');
-                    $('#img').html('<a href=""><img src="img/pen_sira_2.png" alt="しらたま2" style="width:400px; height:500px;"></a> ');
+                    $('#img').html('<a href="https://twitter.com/haru3131sui/status/1559133814420451328?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_sira_2.png" alt="しらたま2" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_3").get(0).play();
+
 
                 } else if (card === 2) {
-                    $('#result').text('ぼんぼり（ホースが気になるver.）');
-                    $('#img').html('<a href=""><img src="img/pen_bon_1.png" alt="ぼんぼり1" style="width:400px; height:500px;"></a> ');
+                    $('#result').text('ぼんぼり君（ホースが気になるver.）');
+                    $('#img').html('<a href="https://twitter.com/kaze_iv/status/1411811612877463553?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_bon_1.png" alt="ぼんぼり1" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_2").get(0).play();
+
 
                 } else if (card === 3) {
-                    $('#result').text('ぼんぼり（ドヤver.）');
-                    $('#img').html('<a href=""><img src="img/pen_bon_2.png" alt="ぼんぼり2" style="width:400px; height:500px;"></a> ');
+                    $('#result').text('ぼんぼり君（ドヤver.）');
+                    $('#img').html('<a href="https://twitter.com/ReLU_aqua/status/1516199679876161541?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_bon_2.png" alt="ぼんぼり2" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_3").get(0).play();
+
 
                 } else if (card === 4) {
                     $('#result').text('だいふく（ポスター）');
-                    $('#img').html('<a href=""><img src="img/pen_dai.png" alt="だいふく" style="width:400px; height:500px;"></a> ');
+                    $('#img').html('<a href="https://twitter.com/Sumida_Aquarium/status/1539422538845286400?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_dai.png" alt="だいふく" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_2").get(0).play();
+
 
                 } else if (card === 5) {
-                    $('#result').text('こまり（陸でおねんねver.）');
-                    $('#img').html('<a href=""><img src="img/pen_koma.png" alt="こまり" style="width:400px; height:500px;"></a> ');
+                    $('#result').text('こまり君（陸でおねんねver.）');
+                    $('#img').html('<a href="https://twitter.com/kaze_fuu4/status/1581603426340810752?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_koma.png" alt="こまり" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_2").get(0).play();
+
 
                 } else if (card === 6) {
-                    $('#result').text('さくら');
-                    $('#img').html('<a href=""><img src="img/pen_saku.png" alt="さくら" style="width:400px; height:500px;"></a> ');
+                    $('#result').text('さくらちゃん');
+                    $('#img').html('<a href="https://twitter.com/Sumida_Aquarium/status/979651585113432065?s=20&t=mFvMq9wMiMXuLovlkfxxSQ"><img src="img/pen_saku.png" alt="さくら" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_2").get(0).play();
 
                 } else {
                     $('#result').text('佐藤さん');
-                    $('#img').html('<a href=""><img src="img/satousan.png" alt="佐藤さん" style="width:400px; height:500px;"></a> ');
+                    $('#img').html('<a href="https://www.walkerplus.com/trend/matome/article/1079040/"><img src="img/satousan.png" alt="佐藤さん" style="width:400px; height:500px;"></a> ');
+                    $("#play-button_4").get(0).play();
+
                 }
             });
 
